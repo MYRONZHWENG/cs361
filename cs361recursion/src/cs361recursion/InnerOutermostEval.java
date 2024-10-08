@@ -32,7 +32,13 @@ public class InnerOutermostEval {
 	 */
 	public static void main(String[] args) {
 		System.out.println("So what is it? Innermost or outermost evaluation?");
-		System.out.println("f(1,1) = " + f(1,1));
+
+		try {
+			System.out.println("f(1,1) = " + f(1,1));
+			System.out.println("f(1,1) terminated. Java uses outermost evaluation");
+		} catch (StackOverflowError e) {
+			System.out.println("StackOverFlow error occurred. Function f doesn't terminate, implying java uses innermost evaluation.");
+		}
 
 	}
 
