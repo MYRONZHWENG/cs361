@@ -1,7 +1,7 @@
 /**
  * 
  */
-package cs361recursion;
+package hw2recursion;
 
 /**
  * @author cscharff
