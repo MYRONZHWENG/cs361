@@ -8,7 +8,6 @@ package hw2recursion;
  *
  */
 public class Fibonacci {
-
 	/**
 	 * fibonacci function
 	 * 
